@@ -60,10 +60,6 @@ $(document).ready(function () {
     });
 });
 
-$(function() {
-    document.addEventListener("touchmove", function(e){ e.preventDefault(); }, false);
-});
-
 document.addEventListener('pointerdown', (event) => {
   if (event.pointerType === "mouse") {pointertype = 1;}
   if (event.pointerType === "touch") {pointertype = 2;}
