@@ -52,7 +52,9 @@ $(document).ready(function () {
         }
         return false;
     });
-    $(window).resize(function () {});
+    $(window).resize(function () {
+        $('html,body').scrollTop(divs.eq(div).offset().top);
+    });
 });
 
 document.addEventListener('pointerdown', (event) => {
