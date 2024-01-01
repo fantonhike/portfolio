@@ -54,6 +54,9 @@ $(document).ready(function () {
         }
         return false;
         }
+        else {
+            var dir = 'auto';
+        }
     });
     $(window).resize(function () {
         if (pointertype == 1) {
