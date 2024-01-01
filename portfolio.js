@@ -57,6 +57,12 @@ $(document).ready(function () {
     });
 });
 
+document.addEventListener('pointerdown', (event) => {
+  if (event.pointerType === "mouse") {document.getElementById('atchoumbutton').setAttribute('style', 'color: green');}
+  if (event.pointerType === "touch") {document.getElementById('atchoumbutton').setAttribute('style', 'color: red');}
+  if (event.pointerType === "pen") {document.getElementById('atchoumbutton').setAttribute('style', 'color: blue');}
+});
+
 function pictishcase(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
