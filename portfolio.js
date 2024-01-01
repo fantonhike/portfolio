@@ -2,9 +2,7 @@ $(document).ready(function () {
     var divs = $('.container');
     var dir = 'up'; // wheel scroll direction
     var div = 0; // current div
-    var pointertype = 1;
     $(document.body).on('DOMMouseScroll mousewheel', function (e) {
-        if (pointertype == 1) {
         if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
             dir = 'down';
         } else {
@@ -56,13 +54,14 @@ $(document).ready(function () {
         }
         else {
             var dir = 'auto';
-        }
     });
     $(window).resize(function () {
-        if (pointertype == 1) {
-            $('html,body').scrollTop(divs.eq(div).offset().top);
-        }
+        $('html,body').scrollTop(divs.eq(div).offset().top);
     });
+});
+
+$(function() {
+    document.addEventListener("touchmove", function(e){ e.preventDefault(); }, false);
 });
 
 document.addEventListener('pointerdown', (event) => {
