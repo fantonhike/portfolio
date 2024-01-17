@@ -27,8 +27,8 @@ $(document).ready(function () {
             var value = parseInt(document.getElementById('number').value, 10);
             value = isNaN(value) ? 0 : value;
             value++;
-            if (value > 9) // this number needs to be equal to the number of pages!!!
-              value = 9;
+            if (value > 12) // this number needs to be equal to the number of pages!!!
+              value = 12; // same as above!!!
             document.getElementById('number').value = value;
         }
         //console.log(div, dir, divs.length);
