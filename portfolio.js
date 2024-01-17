@@ -35,17 +35,17 @@ $(document).ready(function () {
         $('html,body').stop().animate({
             scrollTop: divs.eq(div).offset().top
         }, 0);
-        if (value <= 5) {
+        if (value <= 8) { // this number needs to be equal to the numeber of images in the first project!!!
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: white');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 5 && value < 9) {
+        if (value > 8 && value < 12) { // between numebr of images in first project and number of images in first 2 projects + 1!!!
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
         }
-        if (value == 9) {
+        if (value == 12) { // this number needs to be equal to the number of pages!!!
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: white');
@@ -80,7 +80,7 @@ function pictishcase(){
 function alchemist(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 6;
+  value = 9; // this number needs to be equal to the number of pages in the first project + 1!!!
   document.getElementById('number').value = value;
   document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
   document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
@@ -89,7 +89,7 @@ function alchemist(){
 function atchoum(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 9;
+  value = 12; // this number needs to be equal to the number of pages in the first 2 projects + 1!!!
   document.getElementById('number').value = value;
   document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
   document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
