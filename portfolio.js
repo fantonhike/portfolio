@@ -2,13 +2,7 @@ $(document).ready(function () {
     var divs = $('.container');
     var dir = 'up'; // wheel scroll direction
     var div = 0; // current div
-    $(document.body).on('DOMMouseScroll mousewheel', function (e) {
-        if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
-            dir = 'down';
-        } else {
-            dir = 'up';
-        }
-        // find currently visible div :
+	function scrollfunc() {
         div = -1;
         divs.each(function(i){
             if (div<0 && ($(this).offset().top >= $(window).scrollTop())) {
@@ -51,7 +45,50 @@ $(document).ready(function () {
           document.getElementById('atchoumbutton').setAttribute('style', 'color: white');
         }
         return false;
+	}
+    $(document.body).on('DOMMouseScroll mousewheel', function(e) {
+        if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+            dir = 'down';
+        } else {
+            dir = 'up';
+        }
+        scrollfunc();
     });
+
+	window.addEventListener("keydown", function (event) {
+		
+		switch (event.key) {
+			case "Up": // IE/Edge specific value
+			case "ArrowUp":
+			dir = 'up';
+			scrollfunc();
+			break;
+			
+			case "Down": // IE/Edge specific value
+			case "ArrowDown":
+			dir = 'down';
+			scrollfunc();
+			break;
+
+			case "Left": // IE/Edge specific
+			case "ArrowLeft":
+			dir = 'up';
+			scrollfunc();
+			break;
+
+			case "Right": // IE/Edge specific
+			case "ArrowRight":
+			dir = 'down';
+			scrollfunc();
+			break;
+   
+			default:
+			return; // No key event
+		}
+
+		event.preventDefault(); // Avoid key handling twice
+		}, true);
+
     $(window).resize(function () {
         $('html,body').scrollTop(divs.eq(div).offset().top);
     });
