@@ -21,25 +21,34 @@ $(document).ready(function () {
             var value = parseInt(document.getElementById('number').value, 10);
             value = isNaN(value) ? 0 : value;
             value++;
-            if (value > 12) // this number needs to be equal to the number of pages!!!
-              value = 12; // same as above!!!
+            if (value > 15) // this number needs to be equal to the number of pages!!!
+              value = 15; // same as above!!!
             document.getElementById('number').value = value;
         }
         //console.log(div, dir, divs.length);
         $('html,body').stop().animate({
             scrollTop: divs.eq(div).offset().top
         }, 0);
-        if (value <= 8) { // this number needs to be equal to the numeber of images in the first project!!!
+	if (value <= 3) { // this number needs to be equal to the numeber of images in the first project!!!
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: white');
+          document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
+          document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
+          document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
+	}
+        if (value > 3 && value < 12) { // between numebr of images in first project and number of images in first 2 projects + 1!!!
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: white');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 8 && value < 12) { // between numebr of images in first project and number of images in first 2 projects + 1!!!
+        if (value > 11 && value < 15) { // between numebr of images in first 2 projects and number of images in first 3 projects + 1!!!
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
         }
-        if (value == 12) { // this number needs to be equal to the number of pages!!!
+        if (value == 15) { // this number needs to be equal to the number of pages!!!
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: white');
@@ -105,11 +114,22 @@ document.addEventListener('pointerdown', (event) => {
   }
 }, { once: true });
 
-function pictishcase(){
+function gravity(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
   value = 1;
   document.getElementById('number').value = value;
+  document.getElementById('gravitybutton').setAttribute('style', 'color: white');
+  document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
+  document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
+  document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
+}
+function pictishcase(){
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value = 4; // this number needs to be equal to the number of pages in the first project + 1!!!
+  document.getElementById('number').value = value;
+  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
   document.getElementById('pictishcasebutton').setAttribute('style', 'color: white');
   document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
   document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
@@ -117,8 +137,9 @@ function pictishcase(){
 function alchemist(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 9; // this number needs to be equal to the number of pages in the first project + 1!!!
+  value = 12; // this number needs to be equal to the number of pages in the first 2 projects + 1!!!
   document.getElementById('number').value = value;
+  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
   document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
   document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
   document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
@@ -126,8 +147,9 @@ function alchemist(){
 function atchoum(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 12; // this number needs to be equal to the number of pages in the first 2 projects + 1!!!
+  value = 15; // this number needs to be equal to the number of pages in the first 3 projects + 1!!!
   document.getElementById('number').value = value;
+  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
   document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
   document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
   document.getElementById('atchoumbutton').setAttribute('style', 'color: white');
