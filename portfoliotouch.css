@@ -68,6 +68,9 @@ div#links form{
   transition: all 0.3s ease-in-out;
 }
 
+#gravitybutton {
+  color: white;
+}
 #pictishcasebutton {
   color: #707070;
 }
