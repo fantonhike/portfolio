@@ -21,8 +21,8 @@ $(document).ready(function () {
             var value = parseInt(document.getElementById('number').value, 10);
             value = isNaN(value) ? 0 : value;
             value++;
-            if (value > 15) // this number needs to be equal to the number of pages!!!
-              value = 15; // same as above!!!
+            if (value > 16) // this number needs to be equal to the number of pages!!!
+              value = 16; // same as above!!!
             document.getElementById('number').value = value;
         }
         //console.log(div, dir, divs.length);
@@ -47,7 +47,7 @@ $(document).ready(function () {
           document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
           document.getElementById('atchoumbutton').setAttribute('style', 'color: #707070');
         }
-        if (value == 15) { // this number needs to be equal to the number of pages!!!
+        if (value >= 15) { // this number needs to be equal to the number of pages!!!
 	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
