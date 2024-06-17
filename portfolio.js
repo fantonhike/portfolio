@@ -45,24 +45,31 @@ $(document).ready(function () {
         }
         if (value > 9 && value < 12) { // between number of images in first project and number of images in first 2 projects + 1!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
-	        document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: white');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
         if (value > 11 && value < 15) { // between numebr of images in first 2 projects and number of images in first 3 projects + 1!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
-	        document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
-        if (value >= 15) { // this number needs to be equal to the number of pages!!!
+        if (value > 15 && value < 21) { // this number needs to be equal to the number of pages!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
-	        document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: white');
+        }
+        if (value > 20) { // this number needs to be equal to the number of pages - 1!!!
+          document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
+	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
+          document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
+          document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
+          document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
         return false;
 	}
