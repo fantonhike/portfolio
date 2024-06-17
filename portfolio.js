@@ -57,7 +57,7 @@ $(document).ready(function () {
           document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 15 && value < 21) { // this number needs to be equal to the number of pages!!!
+        if (value > 14 && value < 21) { // this number needs to be equal to the number of pages!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
 	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
