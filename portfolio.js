@@ -21,8 +21,8 @@ $(document).ready(function () {
             var value = parseInt(document.getElementById('number').value, 10);
             value = isNaN(value) ? 0 : value;
             value++;
-            if (value > 21) // this number needs to be equal to the number of pages!!!
-              value = 21; // same as above!!!
+            if (value > 23) // this number needs to be equal to the number of pages!!!
+              value = 23; // same as above!!!
             document.getElementById('number').value = value;
         }
         //console.log(div, dir, divs.length);
@@ -36,35 +36,35 @@ $(document).ready(function () {
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 0 && value < 10) { // this number needs to be equal to the number of images in the first project!!!
+        if (value > 0 && value < 8) { // this number needs to be equal to the number of images in the first project!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
           document.getElementById('gravitybutton').setAttribute('style', 'color: white');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 9 && value < 12) { // between number of images in first project and number of images in first 2 projects + 1!!!
+        if (value > 9 && value < 10) { // between number of images in first project and number of images in first 2 projects + 1!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
 	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: white');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 11 && value < 15) { // between numebr of images in first 2 projects and number of images in first 3 projects + 1!!!
+        if (value > 11 && value < 13) { // between numebr of images in first 2 projects and number of images in first 3 projects + 1!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
 	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: white');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: #707070');
         }
-        if (value > 14 && value < 21) { // this number needs to be equal to the number of pages!!!
+        if (value > 14 && value < 23) { // this number needs to be equal to the number of pages!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
 	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
           document.getElementById('alchemistbutton').setAttribute('style', 'color: #707070');
           document.getElementById('pictishcasebutton').setAttribute('style', 'color: white');
         }
-        if (value > 20) { // this number needs to be equal to the number of pages - 1!!!
+        if (value > 22) { // this number needs to be equal to the number of pages - 1!!!
           document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
 	  document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
           document.getElementById('crescentbutton').setAttribute('style', 'color: #707070');
@@ -157,7 +157,7 @@ function gravity(){
 function crescent(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 10; // this number needs to be equal to the number of pages in the first project + 1!!!
+  value = 8; // this number needs to be equal to the number of pages in the first project + 1!!!
   document.getElementById('number').value = value;
   document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
   document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
@@ -168,7 +168,7 @@ function crescent(){
 function alchemist(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 12; // this number needs to be equal to the number of pages in the first 2 projects + 1!!!
+  value = 10; // this number needs to be equal to the number of pages in the first 2 projects + 1!!!
   document.getElementById('number').value = value;
   document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
   document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
@@ -179,7 +179,7 @@ function alchemist(){
 function pictishcase(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 15; // this number needs to be equal to the number of pages in the first 3 projects + 1!!!
+  value = 13; // this number needs to be equal to the number of pages in the first 3 projects + 1!!!
   document.getElementById('number').value = value;
   document.getElementById('titlebutton').setAttribute('style', 'color: #707070');
   document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
