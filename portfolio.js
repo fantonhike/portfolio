@@ -135,7 +135,7 @@ document.addEventListener('pointerdown', (event) => {
 function titleback(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
-  value = 1;
+  value = 0;
   document.getElementById('number').value = value;
   document.getElementById('titlebutton').setAttribute('style', 'color: white');
   document.getElementById('gravitybutton').setAttribute('style', 'color: #707070');
