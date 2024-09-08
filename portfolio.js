@@ -132,7 +132,7 @@ document.addEventListener('pointerdown', (event) => {
   }
 }, { once: true });
 
-function title(){
+function titleback(){
   var value = parseInt(document.getElementById('number').value, 10);
   value = isNaN(value) ? 0 : value;
   value = 1;
