@@ -1,1 +1,1 @@
-//nothing here yet!
+//nothing here, the mobile site is pretty basic :/
