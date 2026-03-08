@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #323232;
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.gallery img {
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 24px auto;
+}
+
+#status {
+  color: #ffffff;
+  text-align: center;
+}
