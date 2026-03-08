@@ -9,17 +9,23 @@ body {
 }
 
 .gallery {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 0px;
 }
 
 .gallery img {
   display: block;
-  width: 600px;
+  width: 64%;
   max-width: 100%;
   height: auto;
   margin: 0 auto 24px auto;
+}
+
+@media (orientation: portrait) {
+  .gallery img {
+    width: 100%;
+  }
 }
 
 #status {
