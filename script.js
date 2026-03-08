@@ -41,7 +41,7 @@ async function loadImages() {
     for (const file of imageFiles) {
       const img = document.createElement("img");
       img.src = file.download_url;
-      img.alt = file.name;
+      img.alt = `Roger Czartoryski portfolio page`;
       img.loading = "lazy";
       gallery.appendChild(img);
     }
